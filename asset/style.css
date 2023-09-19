@@ -1,0 +1,219 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+    
+nav{
+    grid-area: nav;
+}
+.imgnav{
+    display: flex;
+    justify-content: space-between;
+}
+.Menu{
+    display: flex;
+    align-items: end;
+}
+.Menu ul{
+    display: flex;
+}
+.Menu li{
+    margin: 15px;
+    list-style: none;
+}
+.Menu a{
+    text-decoration: none;
+    color:#004225;
+}
+.imgnav h1{
+    padding: 20px;
+    text-shadow: -7px 1px 8px rgba(113,16,0,0.8);
+    animation: traslado 3s linear infinite;
+    animation-direction: alternate;
+}
+@keyframes traslado {
+    0%{
+        transform: translate(0px);
+    }50%{
+        transform: translate(100px);
+    }100%{
+        transform: translate(200px);
+    }
+}
+
+main{
+    grid-area: main;
+    
+}
+
+footer{
+    grid-area: foot;
+    background-color: #A2C579;
+    display: flex;
+}
+.TD{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RRSS{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.RRSS i{
+    margin: 5px;
+}
+.RRSS a{
+    text-decoration: none;
+    outline: none;
+}
+.cards{    
+    width: 328px; 
+    height: 267px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.cards img{
+    width: 200px;
+    height: 200px;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    border-radius: 20%;
+    transition: all 0.3s ease-in;
+}
+.cards img:hover{
+    width: 210px;
+    height: 210px;   
+    box-shadow: 0px 0px 47px 39px rgba(245,245,10,0.75);
+    -webkit-box-shadow: 0px 0px 47px 39px rgba(245,245,10,0.75);
+    -moz-box-shadow: 0px 0px 47px 39px rgba(245,245,10,0.75);
+}
+.pers1{
+    grid-area: pers1;
+}
+.pers2{
+    grid-area: pers2;
+}
+.pers3{
+    grid-area: pers3;
+}
+.pers4{
+    grid-area: pers4;
+}
+.pers5{
+    grid-area: pers5;
+}
+.pers6{
+    grid-area: pers6;
+}
+.pers7{
+    grid-area: pers7;
+}
+.pers8{
+    grid-area: pers8;
+}
+.pers9{
+    grid-area: pers9;
+}
+.pers10{
+    grid-area: pers10;
+}
+.pers11{
+    grid-area: pers11;
+}
+.pers12{
+    grid-area: pers12;
+}
+
+.Main{
+    overflow-y: scroll;
+    background-color: #EADBC8;
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr 2fr;
+    grid-template-areas: 
+    "pers1 pers2 pers3 pers4"
+    "pers5 pers6 pers7 pers8"
+    "pers9 pers10 pers11 pers12"
+    ;
+} 
+@media (min-width:760px){
+    .Grid{
+        display: grid;
+        grid-template-columns: 10fr;
+        grid-template-areas: 
+        "nav"
+        "main"
+        "foot"
+        ;
+        height: 100vh;
+        }
+        
+        nav{
+            display: flex;
+            height: 20vh;
+        }
+        .Icono{
+            width: 20%;
+            height: 20vh;
+        }
+        .imgnav{
+            width: 80%;
+            height: 20vh;
+        }
+        main{
+            height: 70vh;
+        }
+
+        .Icono img{
+           width: 100%;
+           height: 100%;
+        }
+        .imgnav{
+            background-image: url(img/navbar.png);
+            width: 100%;
+        }
+        
+        footer{
+            height: 10vh;
+        } 
+       
+        
+    
+}
+@media (max-width:520px){
+    .Main{
+        overflow-y: scroll;
+        background-color: #EADBC8;
+        display: grid;
+        grid-template-columns: 10fr;
+        grid-template-areas: 
+        "pers1"
+        "pers2"
+        "pers3" 
+        "pers4"
+        "pers5" 
+        "pers6" 
+        "pers7"
+        "pers8"
+        "pers9"
+        "pers10"
+        "pers11"
+        "pers12"
+        ;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .imgnav{
+        display: none;
+    }
+    .Icono img{
+        width: 100%;
+    }    
+}
+
